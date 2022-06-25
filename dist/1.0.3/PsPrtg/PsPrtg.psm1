@@ -24,7 +24,7 @@ function New-PrtgXmlResult {
 
     )
 
-    $Xml = [System.Collections.Generic.List[string]]
+    $Xml = [System.Collections.Generic.List[string]]::new()
 
     $null = $Xml.Add('<result>')
     $null = $Xml.Add("  <channel>$Channel</channel>")
@@ -60,8 +60,7 @@ function New-PrtgXmlResult {
 
     if ($Warning) {
         $null = $Xml.Add('  <Warning>1</Warning>')
-    }
-    else {
+    } else {
         $null = $Xml.Add('  <Warning>0</Warning>')
     }
 
@@ -80,7 +79,7 @@ function New-PrtgXmlSensorOutput {
     )
 
     begin {
-        $Strings = [System.Collections.Generic.List[string]]
+        $Strings = [System.Collections.Generic.List[string]]::new()
 
         $null = $Strings.add("<prtg>")
     }
@@ -156,6 +155,7 @@ $PublicScriptFiles = $ScriptFiles | Where-Object -FilterScript {
 }
 $publicFunctions = $PublicScriptFiles.BaseName
 Export-ModuleMember -Function @('New-PrtgXmlResult','New-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
+
 
 
 

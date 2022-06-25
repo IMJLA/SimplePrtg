@@ -9,7 +9,7 @@ function New-PrtgXmlSensorOutput {
     )
 
     begin {
-        $Strings = [System.Collections.Generic.List[string]]
+        $Strings = [System.Collections.Generic.List[string]]::new()
 
         $null = $Strings.add("<prtg>")
     }
