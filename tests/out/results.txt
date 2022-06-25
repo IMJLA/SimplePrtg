@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="21" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2022-01-28" time="17:34:56">
+  <environment os-version="10.0.19044" nunit-version="2.5.8.0" clr-version="Unknown" user="Owner" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition2" cwd="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests" user-domain="JLA-LoftHTPC" machine-name="JLA-LOFTHTPC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="0.7152" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.1873" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Manifest.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="module manifest" executed="True" result="Success" success="True" time="0.0291" asserts="0" description="module manifest">
+            <results>
+              <test-suite type="TestFixture" name="module manifest.- Validation" executed="True" result="Success" success="True" time="0.0264" asserts="0" description="module manifest.- Validation">
+                <results>
+                  <test-case description="is a valid manifest" name="module manifest.- Validation.is a valid manifest" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid name in the manifest" name="module manifest.- Validation.has a valid name in the manifest" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid root module" name="module manifest.- Validation.has a valid root module" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid version" name="module manifest.- Validation.has a valid version" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid description" name="module manifest.- Validation.has a valid description" time="0.005" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid author" name="module manifest.- Validation.has a valid author" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid guid" name="module manifest.- Validation.has a valid guid" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid copyright" name="module manifest.- Validation.has a valid copyright" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid version in the changelog" name="module manifest.- Validation.has a valid version in the changelog" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Changelog and manifest versions are the same" name="module manifest.- Validation.Changelog and manifest versions are the same" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.0364" asserts="0" description="Git tagging">
+            <results>
+              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0009" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.0033" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.276" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Meta.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0171" asserts="0" description="Text files formatting">
+            <results>
+              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0084" asserts="0" description="Text files formatting.File encoding">
+                <results>
+                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0142" asserts="0" description="Text files formatting.Indentations">
+                <results>
+                  <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.0028" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Module.tests.ps1" executed="True" result="Success" success="True" time="0.1075" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Module.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="'PsAdsi' Function Tests" executed="True" result="Success" success="True" time="0.0276" asserts="0" description="'PsAdsi' Function Tests">
+            <results>
+              <test-suite type="ParameterizedTest" name="'PsAdsi' Function Tests.Script '&lt;Script&gt;' is valid PowerShell" executed="True" result="Success" success="True" time="0.0236" asserts="0" description="Script '&lt;Script&gt;' is valid PowerShell">
+                <results>
+                  <test-case description="Script 'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\dist\PsAdsi\1.0.18\PsAdsi.psd1' is valid PowerShell" name="'PsAdsi' Function Tests.Script 'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\dist\PsAdsi\1.0.18\PsAdsi.psd1' is valid PowerShell" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Script 'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\dist\PsAdsi\1.0.18\PsAdsi.psm1' is valid PowerShell" name="'PsAdsi' Function Tests.Script 'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\dist\PsAdsi\1.0.18\PsAdsi.psm1' is valid PowerShell" time="0.019" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="module" executed="True" result="Success" success="True" time="0.0601" asserts="0" description="module">
+            <results>
+              <test-suite type="ParameterizedTest" name="module.can be imported without any errors" executed="True" result="Success" success="True" time="0.0284" asserts="0" description="can be imported without any errors">
+                <results>
+                  <test-case description="can be imported without any errors" name="module.can be imported without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\dist\PsAdsi\1.0.18\PsAdsi.psm1&quot;)" time="0.0284" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Project.tests.ps1" executed="True" result="Success" success="True" time="0.0515" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\Project.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="change log" executed="True" result="Success" success="True" time="0.0126" asserts="0" description="change log">
+            <results>
+              <test-case description="has a valid version" name="change log.has a valid version" time="0.0026" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has the same version as the manifest" name="change log.has the same version as the manifest" time="0.0067" asserts="0" success="True" result="Success" executed="True" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\functions\public\Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.tests.ps1" executed="True" result="Success" success="True" time="0.0562" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\tests\functions\public\Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' Function Tests" executed="True" result="Success" success="True" time="0.0155" asserts="0" description="'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' Function Tests">
+            <results>
+              <test-suite type="ParameterizedTest" name="'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' Function Tests.Script file 'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' can be run without any errors" executed="True" result="Success" success="True" time="0.0049" asserts="0" description="Script file 'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' can be run without any errors">
+                <results>
+                  <test-case description="Script file 'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' can be run without any errors" name="'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' Function Tests.Script file 'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' can be run without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\src\functions\public\Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1&quot;)" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' Function Tests.Script '&lt;Script&gt;' is valid PowerShell" executed="True" result="Success" success="True" time="0.0076" asserts="0" description="Script '&lt;Script&gt;' is valid PowerShell">
+                <results>
+                  <test-case description="Script 'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\src\functions\public\Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' is valid PowerShell" name="'Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' Function Tests.Script 'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsAdsi\src\functions\public\Test-PublicFunction_511f9c72-4f82-4b90-be93-ad7576481d5b.ps1' is valid PowerShell" time="0.0076" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
