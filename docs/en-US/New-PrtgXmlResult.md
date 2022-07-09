@@ -55,7 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomUnit
-{{ Fill CustomUnit Description }}
+Custom unit label to apply to the value
 
 ```yaml
 Type: System.String
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxError
-{{ Fill MaxError Description }}
+If the value goes above this the channel will be in an alarm state in PRTG
 
 ```yaml
 Type: System.String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxWarn
-{{ Fill MaxWarn Description }}
+If the value goes above this the channel will be in a warning state in PRTG
 
 ```yaml
 Type: System.String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinError
-{{ Fill MinError Description }}
+If the value goes below this the channel will be in an alarm state in PRTG
 
 ```yaml
 Type: System.String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinWarn
-{{ Fill MinWarn Description }}
+If the value goes below this the channel will be in a warning state in PRTG
 
 ```yaml
 Type: System.String
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShowChart
-{{ Fill ShowChart Description }}
+Show the channel on charts in PRTG
 
 ```yaml
 Type: System.Int32
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -Unit
-{{ Fill Unit Description }}
+Reccomend leaving this as 'Custom' but see PRTG docs for other options
 
 ```yaml
 Type: System.String
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Warning
-{{ Fill Warning Description }}
+Force the channel into a warning state in PRTG
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter

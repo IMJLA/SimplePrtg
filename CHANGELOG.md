@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.6] - 2022-07-09 - improved comment-based help
+
+## [1.0.5] - 2022-07-09 - improved comment-based help
+
 ## [1.0.5] - 2022-07-09 - Fixed mistake in manifest RootModule
 
 ## [1.0.4] - 2022-07-09 - Added comment-based help

@@ -12,14 +12,6 @@ ForEach ($ThisFile in $CSharpFiles) {
     Add-Type -Path $ThisFile.FullName -ErrorAction Stop
 }
 
-# Export any public functions
-$PublicScriptFiles = $ScriptFiles | Where-Object -FilterScript {
-    ($_.PSParentPath | Split-Path -Leaf) -eq 'public'
-}
-$publicFunctions = $PublicScriptFiles.BaseName
 Export-ModuleMember -Function @('New-PrtgXmlResult','New-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
-
-
-
 
 

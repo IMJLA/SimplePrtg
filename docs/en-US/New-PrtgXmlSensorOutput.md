@@ -56,7 +56,7 @@ Generate XML output for a PRTG sensor that will put it in an alarm state
 ## PARAMETERS
 
 ### -IssueDetected
-{{ Fill IssueDetected Description }}
+Force the PRTG sensor into an alarm state
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -71,7 +71,8 @@ Accept wildcard characters: False
 ```
 
 ### -PrtgXmlResult
-{{ Fill PrtgXmlResult Description }}
+Valid XML for a PRTG result for a single channel
+Can be created by New-PrtgXmlResult
 
 ```yaml
 Type: System.String[]

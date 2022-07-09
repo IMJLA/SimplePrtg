@@ -34,13 +34,28 @@ function New-PrtgXmlResult {
         [parameter(Mandatory)]
         [string]$Value,
 
+        # Reccomend leaving this as 'Custom' but see PRTG docs for other options
         [string]$Unit = 'Custom',
+
+        # Custom unit label to apply to the value
         [string]$CustomUnit,
+
+        # Show the channel on charts in PRTG
         [int]$ShowChart = 0,
+
+        # If the value goes above this the channel will be in an alarm state in PRTG
         [string]$MaxError,
+
+        # If the value goes below this the channel will be in an alarm state in PRTG
         [string]$MinError,
+
+        # If the value goes above this the channel will be in a warning state in PRTG
         [string]$MaxWarn,
+
+        # If the value goes below this the channel will be in a warning state in PRTG
         [string]$MinWarn,
+
+        # Force the channel into a warning state in PRTG
         [switch]$Warning
 
     )

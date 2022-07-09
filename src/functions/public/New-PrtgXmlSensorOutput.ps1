@@ -39,9 +39,12 @@ function New-PrtgXmlSensorOutput {
 
     param (
 
+        # Valid XML for a PRTG result for a single channel
+        # Can be created by New-PrtgXmlResult
         [Parameter(ValueFromPipeline)]
         [string[]]$PrtgXmlResult,
 
+        # Force the PRTG sensor into an alarm state
         [switch]$IssueDetected
 
     )

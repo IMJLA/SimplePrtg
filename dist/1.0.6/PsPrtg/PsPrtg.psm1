@@ -35,13 +35,28 @@ function New-PrtgXmlResult {
         [parameter(Mandatory)]
         [string]$Value,
 
+        # Reccomend leaving this as 'Custom' but see PRTG docs for other options
         [string]$Unit = 'Custom',
+
+        # Custom unit label to apply to the value
         [string]$CustomUnit,
+
+        # Show the channel on charts in PRTG
         [int]$ShowChart = 0,
+
+        # If the value goes above this the channel will be in an alarm state in PRTG
         [string]$MaxError,
+
+        # If the value goes below this the channel will be in an alarm state in PRTG
         [string]$MinError,
+
+        # If the value goes above this the channel will be in a warning state in PRTG
         [string]$MaxWarn,
+
+        # If the value goes below this the channel will be in a warning state in PRTG
         [string]$MinWarn,
+
+        # Force the channel into a warning state in PRTG
         [switch]$Warning
 
     )
@@ -131,9 +146,12 @@ function New-PrtgXmlSensorOutput {
 
     param (
 
+        # Valid XML for a PRTG result for a single channel
+        # Can be created by New-PrtgXmlResult
         [Parameter(ValueFromPipeline)]
         [string[]]$PrtgXmlResult,
 
+        # Force the PRTG sensor into an alarm state
         [switch]$IssueDetected
 
     )
@@ -177,6 +195,8 @@ function Send-PrtgXmlSensorOutput {
 
     param(
 
+        # Valid XML for a PRTG custom XML sensor
+        # Can be created by New-PrtgXmlSensorOutput
         [string]$XmlOutput,
 
         # If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
@@ -221,15 +241,7 @@ ForEach ($ThisFile in $CSharpFiles) {
     Add-Type -Path $ThisFile.FullName -ErrorAction Stop
 }
 
-# Export any public functions
-$PublicScriptFiles = $ScriptFiles | Where-Object -FilterScript {
-    ($_.PSParentPath | Split-Path -Leaf) -eq 'public'
-}
-$publicFunctions = $PublicScriptFiles.BaseName
 Export-ModuleMember -Function @('New-PrtgXmlResult','New-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
-
-
-
 
 
 

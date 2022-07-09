@@ -42,7 +42,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
           <maml:name>Unit</maml:name>
           <maml:description>
-            <maml:para>{{ Fill Unit Description }}</maml:para>
+            <maml:para>Reccomend leaving this as 'Custom' but see PRTG docs for other options</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -54,7 +54,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>CustomUnit</maml:name>
           <maml:description>
-            <maml:para>{{ Fill CustomUnit Description }}</maml:para>
+            <maml:para>Custom unit label to apply to the value</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -66,7 +66,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>ShowChart</maml:name>
           <maml:description>
-            <maml:para>{{ Fill ShowChart Description }}</maml:para>
+            <maml:para>Show the channel on charts in PRTG</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
           <dev:type>
@@ -78,7 +78,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
           <maml:name>MaxError</maml:name>
           <maml:description>
-            <maml:para>{{ Fill MaxError Description }}</maml:para>
+            <maml:para>If the value goes above this the channel will be in an alarm state in PRTG</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -90,7 +90,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
           <maml:name>MinError</maml:name>
           <maml:description>
-            <maml:para>{{ Fill MinError Description }}</maml:para>
+            <maml:para>If the value goes below this the channel will be in an alarm state in PRTG</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -102,7 +102,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
           <maml:name>MaxWarn</maml:name>
           <maml:description>
-            <maml:para>{{ Fill MaxWarn Description }}</maml:para>
+            <maml:para>If the value goes above this the channel will be in a warning state in PRTG</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -114,7 +114,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
           <maml:name>MinWarn</maml:name>
           <maml:description>
-            <maml:para>{{ Fill MinWarn Description }}</maml:para>
+            <maml:para>If the value goes below this the channel will be in a warning state in PRTG</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -126,7 +126,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Warning</maml:name>
           <maml:description>
-            <maml:para>{{ Fill Warning Description }}</maml:para>
+            <maml:para>Force the channel into a warning state in PRTG</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>System.Management.Automation.SwitchParameter</maml:name>
@@ -152,7 +152,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
         <maml:name>CustomUnit</maml:name>
         <maml:description>
-          <maml:para>{{ Fill CustomUnit Description }}</maml:para>
+          <maml:para>Custom unit label to apply to the value</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -164,7 +164,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
         <maml:name>MaxError</maml:name>
         <maml:description>
-          <maml:para>{{ Fill MaxError Description }}</maml:para>
+          <maml:para>If the value goes above this the channel will be in an alarm state in PRTG</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -176,7 +176,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
         <maml:name>MaxWarn</maml:name>
         <maml:description>
-          <maml:para>{{ Fill MaxWarn Description }}</maml:para>
+          <maml:para>If the value goes above this the channel will be in a warning state in PRTG</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -188,7 +188,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
         <maml:name>MinError</maml:name>
         <maml:description>
-          <maml:para>{{ Fill MinError Description }}</maml:para>
+          <maml:para>If the value goes below this the channel will be in an alarm state in PRTG</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -200,7 +200,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
         <maml:name>MinWarn</maml:name>
         <maml:description>
-          <maml:para>{{ Fill MinWarn Description }}</maml:para>
+          <maml:para>If the value goes below this the channel will be in a warning state in PRTG</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -212,7 +212,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>ShowChart</maml:name>
         <maml:description>
-          <maml:para>{{ Fill ShowChart Description }}</maml:para>
+          <maml:para>Show the channel on charts in PRTG</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
         <dev:type>
@@ -224,7 +224,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>Unit</maml:name>
         <maml:description>
-          <maml:para>{{ Fill Unit Description }}</maml:para>
+          <maml:para>Reccomend leaving this as 'Custom' but see PRTG docs for other options</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -248,7 +248,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Warning</maml:name>
         <maml:description>
-          <maml:para>{{ Fill Warning Description }}</maml:para>
+          <maml:para>Force the channel into a warning state in PRTG</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
         <dev:type>
@@ -319,7 +319,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
           <maml:name>PrtgXmlResult</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PrtgXmlResult Description }}</maml:para>
+            <maml:para>Valid XML for a PRTG result for a single channel Can be created by New-PrtgXmlResult</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
           <dev:type>
@@ -331,7 +331,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>IssueDetected</maml:name>
           <maml:description>
-            <maml:para>{{ Fill IssueDetected Description }}</maml:para>
+            <maml:para>Force the PRTG sensor into an alarm state</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>System.Management.Automation.SwitchParameter</maml:name>
@@ -345,7 +345,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>IssueDetected</maml:name>
         <maml:description>
-          <maml:para>{{ Fill IssueDetected Description }}</maml:para>
+          <maml:para>Force the PRTG sensor into an alarm state</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
         <dev:type>
@@ -357,7 +357,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
         <maml:name>PrtgXmlResult</maml:name>
         <maml:description>
-          <maml:para>{{ Fill PrtgXmlResult Description }}</maml:para>
+          <maml:para>Valid XML for a PRTG result for a single channel Can be created by New-PrtgXmlResult</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
         <dev:type>
@@ -446,7 +446,7 @@ New-PrtgXmlSensorOutput -IssueDetected</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>XmlOutput</maml:name>
           <maml:description>
-            <maml:para>{{ Fill XmlOutput Description }}</maml:para>
+            <maml:para>Valid XML for a PRTG custom XML sensor Can be created by New-PrtgXmlSensorOutput</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -557,7 +557,7 @@ New-PrtgXmlSensorOutput -IssueDetected</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>XmlOutput</maml:name>
         <maml:description>
-          <maml:para>{{ Fill XmlOutput Description }}</maml:para>
+          <maml:para>Valid XML for a PRTG custom XML sensor Can be created by New-PrtgXmlSensorOutput</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
