@@ -482,7 +482,7 @@ task Publish -depends SourceControl {
     }
 
     # Publish to PSGallery
-    #Publish-Module @publishParams
+    Publish-Module @publishParams
 } -description 'Publish module to the defined PowerShell repository'
 
 task FinalTasks -depends Publish {

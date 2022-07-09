@@ -1,8 +1,8 @@
 ---
 Module Name: PsPrtg
-Module Guid: 7a6956df-7136-48c4-a32e-5f2307ec9603 7a6956df-7136-48c4-a32e-5f2307ec9603
+Module Guid: 7a6956df-7136-48c4-a32e-5f2307ec9603
 Download Help Link: {{ Update Download Link }}
-Help Version: 1.0.8
+Help Version: 1.0.9
 Locale: en-US
 ---
 
