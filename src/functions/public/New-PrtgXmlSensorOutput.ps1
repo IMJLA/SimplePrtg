@@ -1,24 +1,58 @@
 
 function New-PrtgXmlSensorOutput {
+    <#
+        .SYNOPSIS
+        Assemble the complete output for a PRTG XML sensor
+        .DESCRIPTION
+        Combine multiple channels into a single PRTG XML sensor result
+        .INPUTS
+        [System.String]$PrtgXmlResult
+        .OUTPUTS
+        [System.String] Complete XML output for a PRTG custom XML sensor
+        .EXAMPLE
+        @"
+        <result>
+        <channel>Channel123</channel>
+        <value>Value123</value>
+        <unit>Custom</unit>
+        <customUnit>Miles Per Hour</customUnit>
+        <showchart>$ShowChart</showchart>
+        </result>
+        @" |
+        New-PrtgXmlSensorOutput
+
+        Generate XML output for a PRTG sensor that will put it in an OK state
+        .EXAMPLE
+        @"
+        <result>
+        <channel>Channel123</channel>
+        <value>Value123</value>
+        <unit>Custom</unit>
+        <customUnit>Miles Per Hour</customUnit>
+        <showchart>0</showchart>
+        </result>
+        @" |
+        New-PrtgXmlSensorOutput -IssueDetected
+
+        Generate XML output for a PRTG sensor that will put it in an alarm state
+    #>
 
     param (
+
         [Parameter(ValueFromPipeline)]
         [string[]]$PrtgXmlResult,
 
-        [bool]$IssueDetected
+        [switch]$IssueDetected
+
     )
 
     begin {
         $Strings = [System.Collections.Generic.List[string]]::new()
-
         $null = $Strings.add("<prtg>")
     }
     process {
-
         foreach ($XmlResult in $PrtgXmlResult) {
-
             $null = $Strings.add($XmlResult)
-
         }
     }
     end {

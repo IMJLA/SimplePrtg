@@ -2,6 +2,28 @@
 
 function New-PrtgXmlResult {
 
+    <#
+        .SYNOPSIS
+        Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor
+        .DESCRIPTION
+        Generate a <result>...</result> XML channel for a PRTG custom XML sensor
+        .INPUTS
+        [System.String]$Channel
+        .OUTPUTS
+        [System.String] A single XML channel to include in the output for a PRTG XML sensor
+        .EXAMPLE
+        New-PrtgXmlResult -Channel 'Channel123' -Value 'Value123' -CustomUnit 'Miles Per Hour'
+        <result>
+        <channel>Channel123</channel>
+        <value>Value123</value>
+        <unit>Custom</unit>
+        <customUnit>Miles Per Hour</customUnit>
+        <showchart>0</showchart>
+        </result>
+
+        Generate XML output for a PRTG sensor that will put it in an OK state
+    #>
+
     param (
 
         # PRTG sensor channel of the result

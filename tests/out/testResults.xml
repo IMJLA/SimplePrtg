@@ -1,415 +1,277 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="86" errors="0" failures="18" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2022-06-24" time="18:47:52">
-  <environment os-version="10.0.19044" machine-name="JLA-LOFTHTPC" nunit-version="2.5.8.0" user="Owner" clr-version="Unknown" user-domain="JLA-LoftHTPC" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition2" cwd="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests" />
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="86" errors="0" failures="12" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2022-07-09" time="09:03:36">
+  <environment user="Owner" os-version="10.0.19044" clr-version="Unknown" nunit-version="2.5.8.0" machine-name="JLA-LOFTHTPC" cwd="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition2" user-domain="JLA-LoftHTPC" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="3.1759" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="4.2442" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Function.tests.ps1" executed="True" result="Success" success="True" time="0.9424" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Function.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Function.tests.ps1" executed="True" result="Success" success="True" time="1.2275" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Function.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="function 'New-PrtgXmlResult.ps1'" executed="True" result="Success" success="True" time="0.3007" asserts="0" description="function 'New-PrtgXmlResult.ps1'">
+          <test-suite type="TestFixture" name="function 'New-PrtgXmlResult.ps1'" executed="True" result="Success" success="True" time="0.4276" asserts="0" description="function 'New-PrtgXmlResult.ps1'">
             <results>
-              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlResult.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.1794" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlResult.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.2464" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'New-PrtgXmlResult.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlResult.ps1&quot;)" time="0.1794" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'New-PrtgXmlResult.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlResult.ps1&quot;)" time="0.2464" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlResult.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.054" asserts="0" description="runs without throwing errors">
+              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlResult.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0671" asserts="0" description="runs without throwing errors">
                 <results>
-                  <test-case description="runs without throwing errors" name="function 'New-PrtgXmlResult.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlResult.ps1&quot;)" time="0.054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs without throwing errors" name="function 'New-PrtgXmlResult.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlResult.ps1&quot;)" time="0.0671" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="function 'New-PrtgXmlSensorOutput.ps1'" executed="True" result="Success" success="True" time="0.3368" asserts="0" description="function 'New-PrtgXmlSensorOutput.ps1'">
+          <test-suite type="TestFixture" name="function 'New-PrtgXmlSensorOutput.ps1'" executed="True" result="Success" success="True" time="0.4892" asserts="0" description="function 'New-PrtgXmlSensorOutput.ps1'">
             <results>
-              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0073" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0128" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'New-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlSensorOutput.ps1&quot;)" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'New-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlSensorOutput.ps1&quot;)" time="0.0128" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlSensorOutput.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0232" asserts="0" description="runs without throwing errors">
+              <test-suite type="ParameterizedTest" name="function 'New-PrtgXmlSensorOutput.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0431" asserts="0" description="runs without throwing errors">
                 <results>
-                  <test-case description="runs without throwing errors" name="function 'New-PrtgXmlSensorOutput.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlSensorOutput.ps1&quot;)" time="0.0232" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs without throwing errors" name="function 'New-PrtgXmlSensorOutput.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\New-PrtgXmlSensorOutput.ps1&quot;)" time="0.0431" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="function 'Send-PrtgXmlSensorOutput.ps1'" executed="True" result="Success" success="True" time="0.3761" asserts="0" description="function 'Send-PrtgXmlSensorOutput.ps1'">
+          <test-suite type="TestFixture" name="function 'Send-PrtgXmlSensorOutput.ps1'" executed="True" result="Success" success="True" time="0.5434" asserts="0" description="function 'Send-PrtgXmlSensorOutput.ps1'">
             <results>
-              <test-suite type="ParameterizedTest" name="function 'Send-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0171" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="ParameterizedTest" name="function 'Send-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0172" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Send-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\Send-PrtgXmlSensorOutput.ps1&quot;)" time="0.0171" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Send-PrtgXmlSensorOutput.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\Send-PrtgXmlSensorOutput.ps1&quot;)" time="0.0172" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="function 'Send-PrtgXmlSensorOutput.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0151" asserts="0" description="runs without throwing errors">
+              <test-suite type="ParameterizedTest" name="function 'Send-PrtgXmlSensorOutput.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0223" asserts="0" description="runs without throwing errors">
                 <results>
-                  <test-case description="runs without throwing errors" name="function 'Send-PrtgXmlSensorOutput.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\Send-PrtgXmlSensorOutput.ps1&quot;)" time="0.0151" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs without throwing errors" name="function 'Send-PrtgXmlSensorOutput.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\src\functions\public\Send-PrtgXmlSensorOutput.ps1&quot;)" time="0.0223" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1" executed="True" result="Failure" success="False" time="1.2897" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1" executed="True" result="Failure" success="False" time="1.6714" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="help for New-PrtgXmlResult" executed="True" result="Failure" success="False" time="0.7263" asserts="0" description="help for New-PrtgXmlResult">
+          <test-suite type="TestFixture" name="help for New-PrtgXmlResult" executed="True" result="Failure" success="False" time="1.0886" asserts="0" description="help for New-PrtgXmlResult">
             <results>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'" executed="True" result="Failure" success="False" time="0.2555" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Channel'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'" executed="True" result="Success" success="True" time="0.325" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Channel'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'.has a description" time="0.0173" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'.has the correct [mandatory] value" time="0.0443" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'.has the correct parameter type" time="0.1082" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
-                    </failure>
-                  </test-case>
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'.has a description" time="0.0269" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'.has the correct [mandatory] value" time="0.0255" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Channel'.has the correct parameter type" time="0.0219" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'" executed="True" result="Failure" success="False" time="0.2976" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'" executed="True" result="Failure" success="False" time="0.5096" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'.has a description" time="0.0133" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'.has the correct [mandatory] value" time="0.0064" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'.has the correct parameter type" time="0.0129" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'.has a description" time="0.1632" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'.has the correct [mandatory] value" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'CustomUnit'.has the correct parameter type" time="0.0061" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'" executed="True" result="Failure" success="False" time="0.3364" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MaxError'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'" executed="True" result="Failure" success="False" time="0.5495" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MaxError'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'.has a description" time="0.0053" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'.has the correct [mandatory] value" time="0.0088" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'.has the correct parameter type" time="0.0183" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'.has a description" time="0.0128" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'.has the correct [mandatory] value" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MaxError'.has the correct parameter type" time="0.0074" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'" executed="True" result="Failure" success="False" time="0.374" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'" executed="True" result="Failure" success="False" time="0.5959" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'.has a description" time="0.0085" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'.has the correct [mandatory] value" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'.has the correct parameter type" time="0.0163" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'.has a description" time="0.0226" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'.has the correct [mandatory] value" time="0.0069" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MaxWarn'.has the correct parameter type" time="0.0095" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'" executed="True" result="Failure" success="False" time="0.425" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MinError'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'" executed="True" result="Failure" success="False" time="0.6693" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MinError'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'.has a description" time="0.0198" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'.has the correct [mandatory] value" time="0.0089" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'.has the correct parameter type" time="0.0142" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'.has a description" time="0.0507" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'.has the correct [mandatory] value" time="0.0116" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MinError'.has the correct parameter type" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'" executed="True" result="Failure" success="False" time="0.4637" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'" executed="True" result="Failure" success="False" time="0.7247" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'.has a description" time="0.0133" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'.has the correct [mandatory] value" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'.has the correct parameter type" time="0.0164" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'.has a description" time="0.0335" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'.has the correct [mandatory] value" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'MinWarn'.has the correct parameter type" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'" executed="True" result="Failure" success="False" time="0.4937" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'" executed="True" result="Failure" success="False" time="0.7676" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'.has a description" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'.has the correct [mandatory] value" time="0.008" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'.has the correct parameter type" time="0.0131" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'.has a description" time="0.0169" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 5
-Actual length:   12
-Strings differ at index 0.
-Expected: 'Int32'
-But was:  'System.Int32'
-           ^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'.has the correct [mandatory] value" time="0.0107" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'ShowChart'.has the correct parameter type" time="0.0086" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'" executed="True" result="Failure" success="False" time="0.5891" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Unit'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'" executed="True" result="Failure" success="False" time="0.8834" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Unit'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'.has a description" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'.has the correct [mandatory] value" time="0.045" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'.has the correct parameter type" time="0.0285" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'.has a description" time="0.0131" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'.has the correct [mandatory] value" time="0.0816" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Unit'.has the correct parameter type" time="0.0144" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Value'" executed="True" result="Failure" success="False" time="0.6272" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Value'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Value'" executed="True" result="Success" success="True" time="0.9333" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Value'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Value'.has a description" time="0.01" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Value'.has the correct [mandatory] value" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Value'.has the correct parameter type" time="0.0161" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Value'.has a description" time="0.0208" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Value'.has the correct [mandatory] value" time="0.0092" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Value'.has the correct parameter type" time="0.0102" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'" executed="True" result="Failure" success="False" time="0.9898" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Warning'">
+                <results>
+                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'.has a description" time="0.0251" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'.has the correct [mandatory] value" time="0.0124" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'.has the correct parameter type" time="0.005" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'" executed="True" result="Failure" success="False" time="0.667" asserts="0" description="help for New-PrtgXmlResult.- Help for parameter 'Warning'">
-                <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'.has a description" time="0.0084" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'.has the correct [mandatory] value" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlResult.- Help for parameter 'Warning'.has the correct parameter type" time="0.0179" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 15
-Actual length:   44
-Strings differ at index 1.
-Expected: 'SwitchParameter'
-But was:  'System.Management.Automation.SwitchParameter'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
-                    </failure>
-                  </test-case>
-                </results>
-              </test-suite>
-              <test-case description="is not auto-generated" name="help for New-PrtgXmlResult.is not auto-generated" time="0.0109" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has a description" name="help for New-PrtgXmlResult.has a description" time="0.0176" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example code" name="help for New-PrtgXmlResult.has example code" time="0.0145" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example help" name="help for New-PrtgXmlResult.has example help" time="0.0202" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="is not auto-generated" name="help for New-PrtgXmlResult.is not auto-generated" time="0.0376" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has a description" name="help for New-PrtgXmlResult.has a description" time="0.0325" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example code" name="help for New-PrtgXmlResult.has example code" time="0.0888" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example help" name="help for New-PrtgXmlResult.has example help" time="0.0496" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="help for New-PrtgXmlSensorOutput" executed="True" result="Failure" success="False" time="0.8747" asserts="0" description="help for New-PrtgXmlSensorOutput">
+          <test-suite type="TestFixture" name="help for New-PrtgXmlSensorOutput" executed="True" result="Failure" success="False" time="1.2347" asserts="0" description="help for New-PrtgXmlSensorOutput">
             <results>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'" executed="True" result="Failure" success="False" time="0.0917" asserts="0" description="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'" executed="True" result="Failure" success="False" time="0.0789" asserts="0" description="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'.has a description" time="0.0065" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'.has the correct [mandatory] value" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'.has the correct parameter type" time="0.0449" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'.has a description" time="0.0232" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 7
-Actual length:   14
-Strings differ at index 0.
-Expected: 'Boolean'
-But was:  'System.Boolean'
-           ^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'.has the correct [mandatory] value" time="0.0061" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'IssueDetected'.has the correct parameter type" time="0.0068" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'" executed="True" result="Failure" success="False" time="0.1332" asserts="0" description="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'">
+              <test-suite type="TestFixture" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'" executed="True" result="Failure" success="False" time="0.1118" asserts="0" description="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'">
                 <results>
-                  <test-case description="has a description" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'.has a description" time="0.0178" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'.has the correct [mandatory] value" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'.has the correct parameter type" time="0.0102" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'.has a description" time="0.0108" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 8
-Actual length:   15
-Strings differ at index 1.
-Expected: 'String[]'
-But was:  'System.String[]'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'.has the correct [mandatory] value" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for New-PrtgXmlSensorOutput.- Help for parameter 'PrtgXmlResult'.has the correct parameter type" time="0.0038" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="is not auto-generated" name="help for New-PrtgXmlSensorOutput.is not auto-generated" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has a description" name="help for New-PrtgXmlSensorOutput.has a description" time="0.0072" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example code" name="help for New-PrtgXmlSensorOutput.has example code" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example help" name="help for New-PrtgXmlSensorOutput.has example help" time="0.0094" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="is not auto-generated" name="help for New-PrtgXmlSensorOutput.is not auto-generated" time="0.0069" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has a description" name="help for New-PrtgXmlSensorOutput.has a description" time="0.0107" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example code" name="help for New-PrtgXmlSensorOutput.has example code" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example help" name="help for New-PrtgXmlSensorOutput.has example help" time="0.011" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput" executed="True" result="Failure" success="False" time="1.0877" asserts="0" description="help for Send-PrtgXmlSensorOutput">
+          <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput" executed="True" result="Failure" success="False" time="1.4192" asserts="0" description="help for Send-PrtgXmlSensorOutput">
             <results>
-              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'" executed="True" result="Failure" success="False" time="0.0586" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'">
+              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'" executed="True" result="Success" success="True" time="0.0493" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'">
                 <results>
-                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'.has a description" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'.has the correct [mandatory] value" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'.has the correct parameter type" time="0.021" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
-                    </failure>
-                  </test-case>
+                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'.has a description" time="0.0073" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'.has the correct [mandatory] value" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgProbe'.has the correct parameter type" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'" executed="True" result="Failure" success="False" time="0.098" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'">
+              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'" executed="True" result="Success" success="True" time="0.073" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'">
                 <results>
-                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'.has a description" time="0.0052" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'.has the correct [mandatory] value" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'.has the correct parameter type" time="0.0153" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 5
-Actual length:   12
-Strings differ at index 0.
-Expected: 'Int32'
-But was:  'System.Int32'
-           ^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
-                    </failure>
-                  </test-case>
+                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'.has a description" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'.has the correct [mandatory] value" time="0.0075" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorPort'.has the correct parameter type" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'" executed="True" result="Failure" success="False" time="0.1321" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'">
+              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'" executed="True" result="Success" success="True" time="0.0991" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'">
                 <results>
-                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'.has a description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'.has the correct [mandatory] value" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'.has the correct parameter type" time="0.0138" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
-                    </failure>
-                  </test-case>
+                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'.has a description" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'.has the correct [mandatory] value" time="0.005" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorProtocol'.has the correct parameter type" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'" executed="True" result="Failure" success="False" time="0.1593" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'">
+              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'" executed="True" result="Success" success="True" time="0.1352" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'">
                 <results>
-                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'.has a description" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'.has the correct [mandatory] value" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'.has the correct parameter type" time="0.0096" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
-                    </failure>
-                  </test-case>
+                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'.has a description" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'.has the correct [mandatory] value" time="0.0174" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'PrtgSensorToken'.has the correct parameter type" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'" executed="True" result="Failure" success="False" time="0.1912" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'">
+              <test-suite type="TestFixture" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'" executed="True" result="Failure" success="False" time="0.1597" asserts="0" description="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'">
                 <results>
-                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'.has a description" time="0.0093" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'.has the correct [mandatory] value" time="0.0037" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'.has the correct parameter type" time="0.0128" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'.has a description" time="0.0107" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
-                      <message>Expected strings to be the same, but they were different.
-Expected length: 6
-Actual length:   13
-Strings differ at index 1.
-Expected: 'String'
-But was:  'System.String'
-           -^</message>
-                      <stack-trace>at $parameterHelpType | Should -Be $parameter.ParameterType.Name, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114
-at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:114</stack-trace>
+                      <message>Expected a value, but got $null or empty.</message>
+                      <stack-trace>at $parameterHelp.Description.Text | Should -Not -BeNullOrEmpty, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103
+at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Help.tests.ps1:103</stack-trace>
                     </failure>
                   </test-case>
+                  <test-case description="has the correct [mandatory] value" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'.has the correct [mandatory] value" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Send-PrtgXmlSensorOutput.- Help for parameter 'XmlOutput'.has the correct parameter type" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="is not auto-generated" name="help for Send-PrtgXmlSensorOutput.is not auto-generated" time="0.0061" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.has a description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example code" name="help for Send-PrtgXmlSensorOutput.has example code" time="0.0057" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example help" name="help for Send-PrtgXmlSensorOutput.has example help" time="0.0035" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="is not auto-generated" name="help for Send-PrtgXmlSensorOutput.is not auto-generated" time="0.0076" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has a description" name="help for Send-PrtgXmlSensorOutput.has a description" time="0.0031" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example code" name="help for Send-PrtgXmlSensorOutput.has example code" time="0.0079" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example help" name="help for Send-PrtgXmlSensorOutput.has example help" time="0.0034" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Manifest.tests.ps1" executed="True" result="Failure" success="False" time="0.3577" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Manifest.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Manifest.tests.ps1" executed="True" result="Failure" success="False" time="0.491" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Manifest.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="module manifest 'PsPrtg.psd1'" executed="True" result="Failure" success="False" time="0.1238" asserts="0" description="module manifest 'PsPrtg.psd1'">
+          <test-suite type="TestFixture" name="module manifest 'PsPrtg.psd1'" executed="True" result="Failure" success="False" time="0.2108" asserts="0" description="module manifest 'PsPrtg.psd1'">
             <results>
-              <test-suite type="TestFixture" name="module manifest 'PsPrtg.psd1'.- Validation" executed="True" result="Failure" success="False" time="0.1149" asserts="0" description="module manifest 'PsPrtg.psd1'.- Validation">
+              <test-suite type="TestFixture" name="module manifest 'PsPrtg.psd1'.- Validation" executed="True" result="Failure" success="False" time="0.2077" asserts="0" description="module manifest 'PsPrtg.psd1'.- Validation">
                 <results>
-                  <test-case description="is a valid manifest" name="module manifest 'PsPrtg.psd1'.- Validation.is a valid manifest" time="0.0097" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid name in the manifest" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid name in the manifest" time="0.005" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid root module" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid root module" time="0.0248" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="is a valid manifest" name="module manifest 'PsPrtg.psd1'.- Validation.is a valid manifest" time="0.0191" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid name in the manifest" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid name in the manifest" time="0.0227" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid root module" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid root module" time="0.0546" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 6
@@ -422,76 +284,76 @@ But was:  'PsPrtg.psm1'
 at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Manifest.tests.ps1:36</stack-trace>
                     </failure>
                   </test-case>
-                  <test-case description="has a valid version" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid version" time="0.0231" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid description" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid description" time="0.0109" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid author" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid author" time="0.0141" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid guid" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid guid" time="0.0135" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid copyright" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid copyright" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid version" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid version" time="0.0174" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid description" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid description" time="0.0267" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid author" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid author" time="0.0155" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid guid" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid guid" time="0.0317" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid copyright" name="module manifest 'PsPrtg.psd1'.- Validation.has a valid copyright" time="0.016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.1502" asserts="0" description="Git tagging">
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.23" asserts="0" description="Git tagging">
             <results>
-              <test-suite type="TestFixture" name="Git tagging.- Git tag version ''" executed="True" result="Ignored" success="True" time="0.0194" asserts="0" description="Git tagging.- Git tag version ''">
+              <test-suite type="TestFixture" name="Git tagging.- Git tag version ''" executed="True" result="Ignored" success="True" time="0.0165" asserts="0" description="Git tagging.- Git tag version ''">
                 <results>
-                  <test-case description="is a valid version" name="Git tagging.- Git tag version ''.is a valid version" time="0.0113" asserts="0" success="False" result="Ignored" executed="False" />
-                  <test-case description="matches the module manifest version" name="Git tagging.- Git tag version ''.matches the module manifest version" time="0.0028" asserts="0" success="False" result="Ignored" executed="False" />
-                </results>
-              </test-suite>
-            </results>
-          </test-suite>
-        </results>
-      </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Metadata.tests.ps1" executed="True" result="Success" success="True" time="0.2214" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Metadata.tests.ps1">
-        <results>
-          <test-suite type="TestFixture" name="text files" executed="True" result="Success" success="True" time="0.0326" asserts="0" description="text files">
-            <results>
-              <test-suite type="TestFixture" name="text files.- File Encoding" executed="True" result="Success" success="True" time="0.0148" asserts="0" description="text files.- File Encoding">
-                <results>
-                  <test-case description="do not use Unicode/UTF-16 encoding" name="text files.- File Encoding.do not use Unicode/UTF-16 encoding" time="0.011" asserts="0" success="True" result="Success" executed="True" />
-                </results>
-              </test-suite>
-              <test-suite type="TestFixture" name="text files.- Indentations" executed="True" result="Success" success="True" time="0.0276" asserts="0" description="text files.- Indentations">
-                <results>
-                  <test-case description="do not use tabs for indentations" name="text files.- Indentations.do not use tabs for indentations" time="0.0095" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="is a valid version" name="Git tagging.- Git tag version ''.is a valid version" time="0.011" asserts="0" success="False" result="Ignored" executed="False" />
+                  <test-case description="matches the module manifest version" name="Git tagging.- Git tag version ''.matches the module manifest version" time="0.0024" asserts="0" success="False" result="Ignored" executed="False" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Module.tests.ps1" executed="True" result="Success" success="True" time="0.1701" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Module.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Metadata.tests.ps1" executed="True" result="Success" success="True" time="0.312" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Metadata.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="PowerShell files in module 'PsPrtg'" executed="True" result="Success" success="True" time="0.0404" asserts="0" description="PowerShell files in module 'PsPrtg'">
+          <test-suite type="TestFixture" name="text files" executed="True" result="Success" success="True" time="0.0481" asserts="0" description="text files">
             <results>
-              <test-suite type="ParameterizedTest" name="PowerShell files in module 'PsPrtg'.'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0344" asserts="0" description="'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="TestFixture" name="text files.- File Encoding" executed="True" result="Success" success="True" time="0.0213" asserts="0" description="text files.- File Encoding">
                 <results>
-                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.3\PsPrtg\PsPrtg.psd1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsPrtg'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.3\PsPrtg\PsPrtg.psd1' can be tokenized by the PowerShell parser without any errors" time="0.0186" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.3\PsPrtg\PsPrtg.psm1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsPrtg'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.3\PsPrtg\PsPrtg.psm1' can be tokenized by the PowerShell parser without any errors" time="0.0158" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="do not use Unicode/UTF-16 encoding" name="text files.- File Encoding.do not use Unicode/UTF-16 encoding" time="0.0178" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-            </results>
-          </test-suite>
-          <test-suite type="TestFixture" name="module 'PsPrtg'" executed="True" result="Success" success="True" time="0.0851" asserts="0" description="module 'PsPrtg'">
-            <results>
-              <test-suite type="ParameterizedTest" name="module 'PsPrtg'.can be imported without any errors" executed="True" result="Success" success="True" time="0.0412" asserts="0" description="can be imported without any errors">
+              <test-suite type="TestFixture" name="text files.- Indentations" executed="True" result="Success" success="True" time="0.0428" asserts="0" description="text files.- Indentations">
                 <results>
-                  <test-case description="can be imported without any errors" name="module 'PsPrtg'.can be imported without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.3\PsPrtg\PsPrtg.psm1&quot;)" time="0.0412" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="do not use tabs for indentations" name="text files.- Indentations.do not use tabs for indentations" time="0.0182" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Project.tests.ps1" executed="True" result="Success" success="True" time="0.1947" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Project.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Module.tests.ps1" executed="True" result="Success" success="True" time="0.2877" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Module.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="change log" executed="True" result="Success" success="True" time="0.0303" asserts="0" description="change log">
+          <test-suite type="TestFixture" name="PowerShell files in module 'PsPrtg'" executed="True" result="Success" success="True" time="0.0765" asserts="0" description="PowerShell files in module 'PsPrtg'">
             <results>
-              <test-suite type="TestFixture" name="change log.- Version" executed="True" result="Success" success="True" time="0.0255" asserts="0" description="change log.- Version">
+              <test-suite type="ParameterizedTest" name="PowerShell files in module 'PsPrtg'.'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0685" asserts="0" description="'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="has a valid version" name="change log.- Version.has a valid version" time="0.0075" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the same version as the manifest" name="change log.- Version.has the same version as the manifest" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.4\PsPrtg\PsPrtg.psd1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsPrtg'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.4\PsPrtg\PsPrtg.psd1' can be tokenized by the PowerShell parser without any errors" time="0.0602" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.4\PsPrtg\PsPrtg.psm1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsPrtg'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.4\PsPrtg\PsPrtg.psm1' can be tokenized by the PowerShell parser without any errors" time="0.0083" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="module 'PsPrtg'" executed="True" result="Success" success="True" time="0.1591" asserts="0" description="module 'PsPrtg'">
+            <results>
+              <test-suite type="ParameterizedTest" name="module 'PsPrtg'.can be imported without any errors" executed="True" result="Success" success="True" time="0.0768" asserts="0" description="can be imported without any errors">
+                <results>
+                  <test-case description="can be imported without any errors" name="module 'PsPrtg'.can be imported without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\dist\1.0.4\PsPrtg\PsPrtg.psm1&quot;)" time="0.0768" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Project.tests.ps1" executed="True" result="Success" success="True" time="0.2546" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsPrtg\tests\Project.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="change log" executed="True" result="Success" success="True" time="0.0559" asserts="0" description="change log">
+            <results>
+              <test-suite type="TestFixture" name="change log.- Version" executed="True" result="Success" success="True" time="0.0516" asserts="0" description="change log.- Version">
+                <results>
+                  <test-case description="has a valid version" name="change log.- Version.has a valid version" time="0.0272" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the same version as the manifest" name="change log.- Version.has the same version as the manifest" time="0.0203" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>

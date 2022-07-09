@@ -8,25 +8,50 @@ schema: 2.0.0
 # New-PrtgXmlSensorOutput
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Assemble the complete output for a PRTG XML sensor
 
 ## SYNTAX
 
 ```
-New-PrtgXmlSensorOutput [[-PrtgXmlResult] <String[]>] [[-IssueDetected] <Boolean>] [<CommonParameters>]
+New-PrtgXmlSensorOutput [[-PrtgXmlResult] <String[]>] [-IssueDetected] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Combine multiple channels into a single PRTG XML sensor result
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+@"
+<result>
+<channel>Channel123</channel>
+<value>Value123</value>
+<unit>Custom</unit>
+<customUnit>Miles Per Hour</customUnit>
+<showchart>$ShowChart</showchart>
+</result>
+@" |
+New-PrtgXmlSensorOutput
 ```
 
-{{ Add example description here }}
+Generate XML output for a PRTG sensor that will put it in an OK state
+
+### EXAMPLE 2
+```
+@"
+<result>
+<channel>Channel123</channel>
+<value>Value123</value>
+<unit>Custom</unit>
+<customUnit>Miles Per Hour</customUnit>
+<showchart>0</showchart>
+</result>
+@" |
+New-PrtgXmlSensorOutput -IssueDetected
+```
+
+Generate XML output for a PRTG sensor that will put it in an alarm state
 
 ## PARAMETERS
 
@@ -34,13 +59,13 @@ PS C:\> {{ Add example code here }}
 {{ Fill IssueDetected Description }}
 
 ```yaml
-Type: System.Boolean
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 1
-Default value: None
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -54,7 +79,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 0
+Position: 1
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
@@ -65,11 +90,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String[]
-
+### [System.String]$PrtgXmlResult
 ## OUTPUTS
 
-### System.Object
+### [System.String] Complete XML output for a PRTG custom XML sensor
 ## NOTES
 
 ## RELATED LINKS

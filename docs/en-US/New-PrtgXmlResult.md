@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-PrtgXmlResult
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor
 
 ## SYNTAX
 
@@ -19,21 +19,28 @@ New-PrtgXmlResult [-Channel] <String> [-Value] <String> [[-Unit] <String>] [[-Cu
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Generate a \<result\>...\</result\> XML channel for a PRTG custom XML sensor
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+New-PrtgXmlResult -Channel 'Channel123' -Value 'Value123' -CustomUnit 'Miles Per Hour'
+<result>
+<channel>Channel123</channel>
+<value>Value123</value>
+<unit>Custom</unit>
+<customUnit>Miles Per Hour</customUnit>
+<showchart>0</showchart>
+</result>
 ```
 
-{{ Add example description here }}
+Generate XML output for a PRTG sensor that will put it in an OK state
 
 ## PARAMETERS
 
 ### -Channel
-{{ Fill Channel Description }}
+PRTG sensor channel of the result
 
 ```yaml
 Type: System.String
@@ -41,7 +48,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: 0
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -56,7 +63,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 3
+Position: 4
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -71,7 +78,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 5
+Position: 6
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -86,7 +93,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 7
+Position: 8
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -101,7 +108,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 6
+Position: 7
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -116,7 +123,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 8
+Position: 9
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -131,8 +138,8 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 4
-Default value: None
+Position: 5
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -146,14 +153,14 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 2
-Default value: None
+Position: 3
+Default value: Custom
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Value
-{{ Fill Value Description }}
+Value to return
 
 ```yaml
 Type: System.String
@@ -161,7 +168,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: 1
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -177,7 +184,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -187,11 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
+### [System.String]$Channel
 ## OUTPUTS
 
-### System.Object
+### [System.String] A single XML channel to include in the output for a PRTG XML sensor
 ## NOTES
 
 ## RELATED LINKS

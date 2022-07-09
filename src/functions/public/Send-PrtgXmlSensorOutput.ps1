@@ -1,5 +1,21 @@
 function Send-PrtgXmlSensorOutput {
 
+    <#
+        .SYNOPSIS
+        Wrapper for Invoke-WebRequest to make it easy to push results to PRTG XML push sensors
+        .DESCRIPTION
+        Use HTTP post to post results to PRTG XML push sensors
+        .INPUTS
+        [System.String]$XmlOutput
+        .OUTPUTS
+        Passes through the output of Invoke-WebRequest
+        .EXAMPLE
+        New-PrtgXmlSensorOutput ... |
+        Send-PrtgXmlSensorOutput -PrtgSensorProtocol 'https' -PrtgProbe 'server1' -PrtgSensorPort 443 -PrtgSensorToken 'e3edd633-3018-4d8a-91b6-d2635b42b85b'
+
+        Post sensor output to PRTG push sensor e3edd633-3018-4d8a-91b6-d2635b42b85b on server1 using HTTPS on TCP port 443
+    #>
+
     param(
 
         [string]$XmlOutput,

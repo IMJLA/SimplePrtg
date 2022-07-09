@@ -6,19 +6,19 @@
       <command:verb>New</command:verb>
       <command:noun>PrtgXmlResult</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Generate a &lt;result&gt;...&lt;/result&gt; XML channel for a PRTG custom XML sensor</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>New-PrtgXmlResult</maml:name>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Channel</maml:name>
           <maml:description>
-            <maml:para>{{ Fill Channel Description }}</maml:para>
+            <maml:para>PRTG sensor channel of the result</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -27,22 +27,10 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>Value</maml:name>
           <maml:description>
-            <maml:para>{{ Fill Value Description }}</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
-          <dev:type>
-            <maml:name>System.String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
-          <maml:name>Unit</maml:name>
-          <maml:description>
-            <maml:para>{{ Fill Unit Description }}</maml:para>
+            <maml:para>Value to return</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -52,6 +40,18 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>Unit</maml:name>
+          <maml:description>
+            <maml:para>{{ Fill Unit Description }}</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Custom</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>CustomUnit</maml:name>
           <maml:description>
             <maml:para>{{ Fill CustomUnit Description }}</maml:para>
@@ -63,7 +63,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>ShowChart</maml:name>
           <maml:description>
             <maml:para>{{ Fill ShowChart Description }}</maml:para>
@@ -73,9 +73,9 @@
             <maml:name>System.Int32</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
+          <dev:defaultValue>0</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
           <maml:name>MaxError</maml:name>
           <maml:description>
             <maml:para>{{ Fill MaxError Description }}</maml:para>
@@ -87,7 +87,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
           <maml:name>MinError</maml:name>
           <maml:description>
             <maml:para>{{ Fill MinError Description }}</maml:para>
@@ -99,7 +99,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
           <maml:name>MaxWarn</maml:name>
           <maml:description>
             <maml:para>{{ Fill MaxWarn Description }}</maml:para>
@@ -111,7 +111,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
           <maml:name>MinWarn</maml:name>
           <maml:description>
             <maml:para>{{ Fill MinWarn Description }}</maml:para>
@@ -137,10 +137,10 @@
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>Channel</maml:name>
         <maml:description>
-          <maml:para>{{ Fill Channel Description }}</maml:para>
+          <maml:para>PRTG sensor channel of the result</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -149,7 +149,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
         <maml:name>CustomUnit</maml:name>
         <maml:description>
           <maml:para>{{ Fill CustomUnit Description }}</maml:para>
@@ -161,7 +161,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
         <maml:name>MaxError</maml:name>
         <maml:description>
           <maml:para>{{ Fill MaxError Description }}</maml:para>
@@ -173,7 +173,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
         <maml:name>MaxWarn</maml:name>
         <maml:description>
           <maml:para>{{ Fill MaxWarn Description }}</maml:para>
@@ -185,7 +185,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="6" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="7" aliases="none">
         <maml:name>MinError</maml:name>
         <maml:description>
           <maml:para>{{ Fill MinError Description }}</maml:para>
@@ -197,7 +197,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="8" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="9" aliases="none">
         <maml:name>MinWarn</maml:name>
         <maml:description>
           <maml:para>{{ Fill MinWarn Description }}</maml:para>
@@ -209,7 +209,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
         <maml:name>ShowChart</maml:name>
         <maml:description>
           <maml:para>{{ Fill ShowChart Description }}</maml:para>
@@ -219,9 +219,9 @@
           <maml:name>System.Int32</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
+        <dev:defaultValue>0</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
         <maml:name>Unit</maml:name>
         <maml:description>
           <maml:para>{{ Fill Unit Description }}</maml:para>
@@ -231,12 +231,12 @@
           <maml:name>System.String</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
+        <dev:defaultValue>Custom</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
         <maml:name>Value</maml:name>
         <maml:description>
-          <maml:para>{{ Fill Value Description }}</maml:para>
+          <maml:para>Value to return</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -261,7 +261,7 @@
     <command:inputTypes>
       <command:inputType>
         <dev:type>
-          <maml:name>None</maml:name>
+          <maml:name>[System.String]$Channel</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -271,7 +271,7 @@
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>System.Object</maml:name>
+          <maml:name>[System.String] A single XML channel to include in the output for a PRTG XML sensor</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -285,10 +285,17 @@
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-PrtgXmlResult -Channel 'Channel123' -Value 'Value123' -CustomUnit 'Miles Per Hour'
+&lt;result&gt;
+&lt;channel&gt;Channel123&lt;/channel&gt;
+&lt;value&gt;Value123&lt;/value&gt;
+&lt;unit&gt;Custom&lt;/unit&gt;
+&lt;customUnit&gt;Miles Per Hour&lt;/customUnit&gt;
+&lt;showchart&gt;0&lt;/showchart&gt;
+&lt;/result&gt;</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Generate XML output for a PRTG sensor that will put it in an OK state</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -300,16 +307,16 @@
       <command:verb>New</command:verb>
       <command:noun>PrtgXmlSensorOutput</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Assemble the complete output for a PRTG XML sensor</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Combine multiple channels into a single PRTG XML sensor result</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>New-PrtgXmlSensorOutput</maml:name>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
           <maml:name>PrtgXmlResult</maml:name>
           <maml:description>
             <maml:para>{{ Fill PrtgXmlResult Description }}</maml:para>
@@ -321,34 +328,33 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>IssueDetected</maml:name>
           <maml:description>
             <maml:para>{{ Fill IssueDetected Description }}</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.Boolean</command:parameterValue>
           <dev:type>
-            <maml:name>System.Boolean</maml:name>
+            <maml:name>System.Management.Automation.SwitchParameter</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
+          <dev:defaultValue>False</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>IssueDetected</maml:name>
         <maml:description>
           <maml:para>{{ Fill IssueDetected Description }}</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.Boolean</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">System.Management.Automation.SwitchParameter</command:parameterValue>
         <dev:type>
-          <maml:name>System.Boolean</maml:name>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
           <maml:uri />
         </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
+        <dev:defaultValue>False</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
         <maml:name>PrtgXmlResult</maml:name>
         <maml:description>
           <maml:para>{{ Fill PrtgXmlResult Description }}</maml:para>
@@ -364,7 +370,7 @@
     <command:inputTypes>
       <command:inputType>
         <dev:type>
-          <maml:name>System.String[]</maml:name>
+          <maml:name>[System.String]$PrtgXmlResult</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -374,7 +380,7 @@
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>System.Object</maml:name>
+          <maml:name>[System.String] Complete XML output for a PRTG custom XML sensor</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -388,10 +394,35 @@
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>@"
+&lt;result&gt;
+&lt;channel&gt;Channel123&lt;/channel&gt;
+&lt;value&gt;Value123&lt;/value&gt;
+&lt;unit&gt;Custom&lt;/unit&gt;
+&lt;customUnit&gt;Miles Per Hour&lt;/customUnit&gt;
+&lt;showchart&gt;$ShowChart&lt;/showchart&gt;
+&lt;/result&gt;
+@" |
+New-PrtgXmlSensorOutput</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Generate XML output for a PRTG sensor that will put it in an OK state</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>@"
+&lt;result&gt;
+&lt;channel&gt;Channel123&lt;/channel&gt;
+&lt;value&gt;Value123&lt;/value&gt;
+&lt;unit&gt;Custom&lt;/unit&gt;
+&lt;customUnit&gt;Miles Per Hour&lt;/customUnit&gt;
+&lt;showchart&gt;0&lt;/showchart&gt;
+&lt;/result&gt;
+@" |
+New-PrtgXmlSensorOutput -IssueDetected</dev:code>
+        <dev:remarks>
+          <maml:para>Generate XML output for a PRTG sensor that will put it in an alarm state</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -403,16 +434,16 @@
       <command:verb>Send</command:verb>
       <command:noun>PrtgXmlSensorOutput</command:noun>
       <maml:description>
-        <maml:para>{{ Fill in the Synopsis }}</maml:para>
+        <maml:para>Wrapper for Invoke-WebRequest to make it easy to push results to PRTG XML push sensors</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>{{ Fill in the Description }}</maml:para>
+      <maml:para>Use HTTP post to post results to PRTG XML push sensors</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
         <maml:name>Send-PrtgXmlSensorOutput</maml:name>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>XmlOutput</maml:name>
           <maml:description>
             <maml:para>{{ Fill XmlOutput Description }}</maml:para>
@@ -424,22 +455,10 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
           <maml:name>PrtgProbe</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PrtgProbe Description }}</maml:para>
-          </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
-          <dev:type>
-            <maml:name>System.String</maml:name>
-            <maml:uri />
-          </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
-        </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
-          <maml:name>PrtgSensorProtocol</maml:name>
-          <maml:description>
-            <maml:para>{{ Fill PrtgSensorProtocol Description }}</maml:para>
+            <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -449,21 +468,33 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+          <maml:name>PrtgSensorProtocol</maml:name>
+          <maml:description>
+            <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+          <dev:type>
+            <maml:name>System.String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
           <maml:name>PrtgSensorPort</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PrtgSensorPort Description }}</maml:para>
+            <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
           <dev:type>
             <maml:name>System.Int32</maml:name>
             <maml:uri />
           </dev:type>
-          <dev:defaultValue>None</dev:defaultValue>
+          <dev:defaultValue>0</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
           <maml:name>PrtgSensorToken</maml:name>
           <maml:description>
-            <maml:para>{{ Fill PrtgSensorToken Description }}</maml:para>
+            <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -475,34 +506,10 @@
       </command:syntaxItem>
     </command:syntax>
     <command:parameters>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
         <maml:name>PrtgProbe</maml:name>
         <maml:description>
-          <maml:para>{{ Fill PrtgProbe Description }}</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
-        <dev:type>
-          <maml:name>System.String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
-        <maml:name>PrtgSensorPort</maml:name>
-        <maml:description>
-          <maml:para>{{ Fill PrtgSensorPort Description }}</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
-        <dev:type>
-          <maml:name>System.Int32</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
-        <maml:name>PrtgSensorProtocol</maml:name>
-        <maml:description>
-          <maml:para>{{ Fill PrtgSensorProtocol Description }}</maml:para>
+          <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -512,9 +519,21 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="4" aliases="none">
-        <maml:name>PrtgSensorToken</maml:name>
+        <maml:name>PrtgSensorPort</maml:name>
         <maml:description>
-          <maml:para>{{ Fill PrtgSensorToken Description }}</maml:para>
+          <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.Int32</command:parameterValue>
+        <dev:type>
+          <maml:name>System.Int32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>0</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="3" aliases="none">
+        <maml:name>PrtgSensorProtocol</maml:name>
+        <maml:description>
+          <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>
@@ -523,7 +542,19 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="5" aliases="none">
+        <maml:name>PrtgSensorToken</maml:name>
+        <maml:description>
+          <maml:para>If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>XmlOutput</maml:name>
         <maml:description>
           <maml:para>{{ Fill XmlOutput Description }}</maml:para>
@@ -539,7 +570,7 @@
     <command:inputTypes>
       <command:inputType>
         <dev:type>
-          <maml:name>None</maml:name>
+          <maml:name>[System.String]$XmlOutput</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -549,7 +580,7 @@
     <command:returnValues>
       <command:returnValue>
         <dev:type>
-          <maml:name>System.Object</maml:name>
+          <maml:name>Passes through the output of Invoke-WebRequest</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -563,10 +594,11 @@
     </maml:alertSet>
     <command:examples>
       <command:example>
-        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; {{ Add example code here }}</dev:code>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-PrtgXmlSensorOutput ... |
+Send-PrtgXmlSensorOutput -PrtgSensorProtocol 'https' -PrtgProbe 'server1' -PrtgSensorPort 443 -PrtgSensorToken 'e3edd633-3018-4d8a-91b6-d2635b42b85b'</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }}</maml:para>
+          <maml:para>Post sensor output to PRTG push sensor e3edd633-3018-4d8a-91b6-d2635b42b85b on server1 using HTTPS on TCP port 443</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
