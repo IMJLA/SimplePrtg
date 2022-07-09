@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ---
 
-# New-PrtgXmlSensorOutput
+# Format-PrtgXmlSensorOutput
 
 ## SYNOPSIS
 Assemble the complete output for a PRTG XML sensor
@@ -13,7 +13,7 @@ Assemble the complete output for a PRTG XML sensor
 ## SYNTAX
 
 ```
-New-PrtgXmlSensorOutput [[-PrtgXmlResult] <String[]>] [-IssueDetected] [<CommonParameters>]
+Format-PrtgXmlSensorOutput [[-PrtgXmlResult] <String[]>] [-IssueDetected] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -PrtgXmlResult
 Valid XML for a PRTG result for a single channel
-Can be created by New-PrtgXmlResult
+Can be created by Format-PrtgXmlResult
 
 ```yaml
 Type: System.String[]

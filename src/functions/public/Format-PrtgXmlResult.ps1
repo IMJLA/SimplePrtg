@@ -1,6 +1,6 @@
 
 
-function New-PrtgXmlResult {
+function Format-PrtgXmlResult {
 
     <#
         .SYNOPSIS

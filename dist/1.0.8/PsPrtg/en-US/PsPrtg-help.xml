@@ -2,8 +2,8 @@
 <helpItems schema="maml" xmlns="http://msh">
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>New-PrtgXmlResult</command:name>
-      <command:verb>New</command:verb>
+      <command:name>Format-PrtgXmlResult</command:name>
+      <command:verb>Format</command:verb>
       <command:noun>PrtgXmlResult</command:noun>
       <maml:description>
         <maml:para>Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor</maml:para>
@@ -14,7 +14,7 @@
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>New-PrtgXmlResult</maml:name>
+        <maml:name>Format-PrtgXmlResult</maml:name>
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>Channel</maml:name>
           <maml:description>
@@ -303,8 +303,8 @@
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>New-PrtgXmlSensorOutput</command:name>
-      <command:verb>New</command:verb>
+      <command:name>Format-PrtgXmlSensorOutput</command:name>
+      <command:verb>Format</command:verb>
       <command:noun>PrtgXmlSensorOutput</command:noun>
       <maml:description>
         <maml:para>Assemble the complete output for a PRTG XML sensor</maml:para>
@@ -315,11 +315,11 @@
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>New-PrtgXmlSensorOutput</maml:name>
+        <maml:name>Format-PrtgXmlSensorOutput</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
           <maml:name>PrtgXmlResult</maml:name>
           <maml:description>
-            <maml:para>Valid XML for a PRTG result for a single channel Can be created by New-PrtgXmlResult</maml:para>
+            <maml:para>Valid XML for a PRTG result for a single channel Can be created by Format-PrtgXmlResult</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
           <dev:type>
@@ -357,7 +357,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="1" aliases="none">
         <maml:name>PrtgXmlResult</maml:name>
         <maml:description>
-          <maml:para>Valid XML for a PRTG result for a single channel Can be created by New-PrtgXmlResult</maml:para>
+          <maml:para>Valid XML for a PRTG result for a single channel Can be created by Format-PrtgXmlResult</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String[]</command:parameterValue>
         <dev:type>
@@ -446,7 +446,7 @@ New-PrtgXmlSensorOutput -IssueDetected</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
           <maml:name>XmlOutput</maml:name>
           <maml:description>
-            <maml:para>Valid XML for a PRTG custom XML sensor Can be created by New-PrtgXmlSensorOutput</maml:para>
+            <maml:para>Valid XML for a PRTG custom XML sensor Can be created by Format-PrtgXmlSensorOutput</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
           <dev:type>
@@ -557,7 +557,7 @@ New-PrtgXmlSensorOutput -IssueDetected</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
         <maml:name>XmlOutput</maml:name>
         <maml:description>
-          <maml:para>Valid XML for a PRTG custom XML sensor Can be created by New-PrtgXmlSensorOutput</maml:para>
+          <maml:para>Valid XML for a PRTG custom XML sensor Can be created by Format-PrtgXmlSensorOutput</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
         <dev:type>

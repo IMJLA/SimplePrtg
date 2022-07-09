@@ -12,6 +12,8 @@ ForEach ($ThisFile in $CSharpFiles) {
     Add-Type -Path $ThisFile.FullName -ErrorAction Stop
 }
 
-Export-ModuleMember -Function @('New-PrtgXmlResult','New-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
+Export-ModuleMember -Function @('Format-PrtgXmlResult','Format-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
+
+
 
 

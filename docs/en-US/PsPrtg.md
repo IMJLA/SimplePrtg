@@ -1,8 +1,8 @@
 ---
 Module Name: PsPrtg
-Module Guid: 7a6956df-7136-48c4-a32e-5f2307ec9603
+Module Guid: 7a6956df-7136-48c4-a32e-5f2307ec9603 7a6956df-7136-48c4-a32e-5f2307ec9603
 Download Help Link: {{ Update Download Link }}
-Help Version: 1.0.6
+Help Version: 1.0.8
 Locale: en-US
 ---
 
@@ -11,10 +11,10 @@ Locale: en-US
 Use Paessler PRTG Network Monitor
 
 ## PsPrtg Cmdlets
-### [New-PrtgXmlResult](New-PrtgXmlResult.md)
+### [Format-PrtgXmlResult](Format-PrtgXmlResult.md)
 Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor
 
-### [New-PrtgXmlSensorOutput](New-PrtgXmlSensorOutput.md)
+### [Format-PrtgXmlSensorOutput](Format-PrtgXmlSensorOutput.md)
 Assemble the complete output for a PRTG XML sensor
 
 ### [Send-PrtgXmlSensorOutput](Send-PrtgXmlSensorOutput.md)

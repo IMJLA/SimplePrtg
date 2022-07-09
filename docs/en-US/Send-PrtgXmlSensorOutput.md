@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -XmlOutput
 Valid XML for a PRTG custom XML sensor
-Can be created by New-PrtgXmlSensorOutput
+Can be created by Format-PrtgXmlSensorOutput
 
 ```yaml
 Type: System.String

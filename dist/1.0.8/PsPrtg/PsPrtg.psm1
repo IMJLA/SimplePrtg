@@ -1,7 +1,7 @@
 
 
 
-function New-PrtgXmlResult {
+function Format-PrtgXmlResult {
 
     <#
         .SYNOPSIS
@@ -106,7 +106,7 @@ function New-PrtgXmlResult {
 
 }
 
-function New-PrtgXmlSensorOutput {
+function Format-PrtgXmlSensorOutput {
     <#
         .SYNOPSIS
         Assemble the complete output for a PRTG XML sensor
@@ -147,7 +147,7 @@ function New-PrtgXmlSensorOutput {
     param (
 
         # Valid XML for a PRTG result for a single channel
-        # Can be created by New-PrtgXmlResult
+        # Can be created by Format-PrtgXmlResult
         [Parameter(ValueFromPipeline)]
         [string[]]$PrtgXmlResult,
 
@@ -196,7 +196,7 @@ function Send-PrtgXmlSensorOutput {
     param(
 
         # Valid XML for a PRTG custom XML sensor
-        # Can be created by New-PrtgXmlSensorOutput
+        # Can be created by Format-PrtgXmlSensorOutput
         [string]$XmlOutput,
 
         # If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
@@ -241,7 +241,9 @@ ForEach ($ThisFile in $CSharpFiles) {
     Add-Type -Path $ThisFile.FullName -ErrorAction Stop
 }
 
-Export-ModuleMember -Function @('New-PrtgXmlResult','New-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
+Export-ModuleMember -Function @('Format-PrtgXmlResult','Format-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
+
+
 
 
 

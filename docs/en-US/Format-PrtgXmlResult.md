@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ---
 
-# New-PrtgXmlResult
+# Format-PrtgXmlResult
 
 ## SYNOPSIS
 Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor
@@ -13,7 +13,7 @@ Generate an XML result for a single channel to include in the result for a PRTG 
 ## SYNTAX
 
 ```
-New-PrtgXmlResult [-Channel] <String> [-Value] <String> [[-Unit] <String>] [[-CustomUnit] <String>]
+Format-PrtgXmlResult [-Channel] <String> [-Value] <String> [[-Unit] <String>] [[-CustomUnit] <String>]
  [[-ShowChart] <Int32>] [[-MaxError] <String>] [[-MinError] <String>] [[-MaxWarn] <String>]
  [[-MinWarn] <String>] [-Warning] [<CommonParameters>]
 ```

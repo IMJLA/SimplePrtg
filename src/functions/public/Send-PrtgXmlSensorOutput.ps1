@@ -19,7 +19,7 @@ function Send-PrtgXmlSensorOutput {
     param(
 
         # Valid XML for a PRTG custom XML sensor
-        # Can be created by New-PrtgXmlSensorOutput
+        # Can be created by Format-PrtgXmlSensorOutput
         [string]$XmlOutput,
 
         # If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
