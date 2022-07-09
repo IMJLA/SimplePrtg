@@ -9,10 +9,10 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'PsPrtg.psm1'
+    RootModule        = 'PsPrtg'
 
     # Version number of this module.
-    ModuleVersion     = '1.0.4'
+    ModuleVersion     = '1.0.5'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
