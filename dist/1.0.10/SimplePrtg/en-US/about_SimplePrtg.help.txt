@@ -1,5 +1,5 @@
 ---
-Module Name: PsPrtg
+Module Name: SimplePrtg
 Module Guid: 7a6956df-7136-48c4-a32e-5f2307ec9603
 Download Help Link: {{ Update Download Link }}
 Help Version: 1.0.5

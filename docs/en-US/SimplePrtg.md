@@ -1,16 +1,16 @@
 ---
-Module Name: PsPrtg
+Module Name: SimplePrtg
 Module Guid: 7a6956df-7136-48c4-a32e-5f2307ec9603
 Download Help Link: {{ Update Download Link }}
-Help Version: 1.0.9
+Help Version: 1.0.10
 Locale: en-US
 ---
 
-# PsPrtg Module
+# SimplePrtg Module
 ## Description
 Use Paessler PRTG Network Monitor
 
-## PsPrtg Cmdlets
+## SimplePrtg Cmdlets
 ### [Format-PrtgXmlResult](Format-PrtgXmlResult.md)
 Generate an XML result for a single channel to include in the result for a PRTG custom XML sensor
 

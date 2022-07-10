@@ -1,6 +1,6 @@
 ---
-external help file: PsPrtg-help.xml
-Module Name: PsPrtg
+external help file: SimplePrtg-help.xml
+Module Name: SimplePrtg
 online version:
 schema: 2.0.0
 ---
