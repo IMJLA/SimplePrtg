@@ -6,13 +6,13 @@ Help Version: 1.0.5
 Locale: en-US
 ---
 
-# PsPrtg Module
+# SimplePrtg Module
 
 ## Description
 
 Use Paessler PRTG Network Monitor
 
-## PsPrtg Cmdlets
+## SimplePrtg Cmdlets
 
 ### [New-PrtgXmlResult](New-PrtgXmlResult.md)
 
