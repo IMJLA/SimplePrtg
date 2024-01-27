@@ -7,3 +7,4 @@ ForEach ($ThisFile in $CSharpFiles) {
 #>
 Export-ModuleMember -Function @('Format-PrtgXmlResult','Format-PrtgXmlSensorOutput','Send-PrtgXmlSensorOutput')
 
+

@@ -13,8 +13,8 @@ Wrapper for Invoke-WebRequest to make it easy to push results to PRTG XML push s
 ## SYNTAX
 
 ```
-Send-PrtgXmlSensorOutput [[-XmlOutput] <String>] [[-PrtgProbe] <String>] [[-PrtgSensorProtocol] <String>]
- [[-PrtgSensorPort] <Int32>] [[-PrtgSensorToken] <String>]
+Send-PrtgXmlSensorOutput [[-XmlOutput] <String>] [[-PrtgProbe] <String>] [[-PrtgProtocol] <String>]
+ [[-PrtgPort] <Int32>] [[-PrtgToken] <String>]
 ```
 
 ## DESCRIPTION
@@ -25,12 +25,27 @@ Use HTTP post to post results to PRTG XML push sensors
 ### EXAMPLE 1
 ```
 New-PrtgXmlSensorOutput ... |
-Send-PrtgXmlSensorOutput -PrtgSensorProtocol 'https' -PrtgProbe 'server1' -PrtgSensorPort 443 -PrtgSensorToken 'e3edd633-3018-4d8a-91b6-d2635b42b85b'
+Send-PrtgXmlSensorOutput -PrtgProtocol 'https' -PrtgProbe 'server1' -PrtgPort 443 -PrtgToken 'e3edd633-3018-4d8a-91b6-d2635b42b85b'
 ```
 
 Post sensor output to PRTG push sensor e3edd633-3018-4d8a-91b6-d2635b42b85b on server1 using HTTPS on TCP port 443
 
 ## PARAMETERS
+
+### -PrtgPort
+If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
+
+```yaml
+Type: System.Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 4
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -PrtgProbe
 If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
@@ -47,22 +62,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrtgSensorPort
-If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
-
-```yaml
-Type: System.Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: 4
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PrtgSensorProtocol
+### -PrtgProtocol
 If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
 
 ```yaml
@@ -77,7 +77,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrtgSensorToken
+### -PrtgToken
 If all four of the PRTG parameters are specified, then the results will be XML-formatted and pushed to the specified PRTG probe for a push sensor
 
 ```yaml

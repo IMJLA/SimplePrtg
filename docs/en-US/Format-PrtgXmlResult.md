@@ -15,7 +15,7 @@ Generate an XML result for a single channel to include in the result for a PRTG 
 ```
 Format-PrtgXmlResult [-Channel] <String> [-Value] <String> [[-Unit] <String>] [[-CustomUnit] <String>]
  [[-ShowChart] <Int32>] [[-MaxError] <String>] [[-MinError] <String>] [[-MaxWarn] <String>]
- [[-MinWarn] <String>] [-Warning] [<CommonParameters>]
+ [[-MinWarn] <String>] [-Warning] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -124,6 +124,21 @@ Aliases:
 
 Required: False
 Position: 9
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgressAction
+{{ Fill ProgressAction Description }}
+
+```yaml
+Type: System.Management.Automation.ActionPreference
+Parameter Sets: (All)
+Aliases: proga
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
